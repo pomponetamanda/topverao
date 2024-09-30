@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1>Império </br> Feminino</h1>
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Privacy">Comunidade</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Lojas">Lojas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="product-details">
+            <div class="image-container">
+                <img src="topverao.jpg" alt="Imagem do Produto" class="product-image">
+            </div>
+            <div class="details">
+                <h1>Top Verao</h1>
+                <p class="price">R$ 85,00</p>
+                <p class="description">Top de verão ombro a ombro.</p>
+                
+                <div class="form-group">
+                    <label>Escolha a cor:</label>
+                    <div class="color-options">
+                        <label class="color-option">
+                            <input type="radio" name="cor" value="vermelho" checked>
+                            <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=" alt="Vermelho">
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="cor" value="azul">
+                            <img src="https://via.placeholder.com/50/0000FF/FFFFFF?text=" alt="Azul">
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="cor" value="verde">
+                            <img src="https://via.placeholder.com/50/008000/FFFFFF?text=" alt="Verde">
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="cor" value="preto">
+                            <img src="https://via.placeholder.com/50/000000/FFFFFF?text=" alt="Preto">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tamanho">Escolha o tamanho:</label>
+                    <select id="tamanho" name="tamanho">
+                        <option value="p">P</option>
+                        <option value="m">M</option>
+                        <option value="g">G</option>
+                        <option value="gg">GG</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn add-to-cart">Adicionar ao Carrinho</button>
+                    <button type="button" class="btn buy-now">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
